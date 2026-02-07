@@ -1,6 +1,6 @@
 package Queue;
 
-import java.util.Queue;
+import java.util.*;
 
 public class FirstNonRepeating {
      public static void printNonRepeating(String str) {

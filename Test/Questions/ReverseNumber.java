@@ -14,7 +14,7 @@ public class ReverseNumber {
 
         while (n > 0) {
             int lastDigit = n % 10;
-            rev = (rev * 10) + lastDigit;
+            rev = (rev * 10) + lastDigit;   // add a new digit at end and adding lastDigit
             n = n / 10;
         }
         System.out.println(rev);

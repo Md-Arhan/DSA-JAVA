@@ -21,3 +21,6 @@ public class Memoization {
         System.out.println(fib(n, dp));
     }
 }
+
+
+//The fibonacci is number of series where each num is the sum of two preciding numbers

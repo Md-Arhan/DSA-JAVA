@@ -30,6 +30,23 @@ public class BinaryToDecimal {
         System.out.println(decNum);
     }
 
+    class Solution {
+    public List<Boolean> prefixesDivBy5(int[] nums) {
+        List<Boolean> ans = new ArrayList<>();
+        int n = nums.length;
+        int mod = 0;
+        
+        for (int i = 0; i < n; i++) {
+            mod = (mod * 2 + nums[i]) % 5; 
+            
+            ans.add(mod == 0);
+        }
+
+        return ans;
+    }
+}
+
+
     public static void main(String[] args) {
         binToDec(101011);
         binToDec(101011);

@@ -4,6 +4,21 @@ import java.util.Arrays;
 
 public class PrimeNumber {
 
+    // A prime number is a number which is divisibel by itself or 1.
+
+    // The square root of a number n is a value that, when multiplied by itself,
+    // equals n
+    // we Are going to calculate till sqrt n because number beyoing that always
+    // smaller than before the srt (n)
+
+    // The square root of a number n is a value that, when multiplied by itself,
+    // equals n.
+    // When checking if n is prime, we only need to check divisors up to √n.
+    // Any factor greater than √n would have a corresponding smaller factor less
+    // than or equal to √n,
+    // which we would have already checked. Therefore, checking beyond √n is
+    // unnecessary.
+
     public static boolean isPrime(int n) {
         for (int i = 2; i <= (Math.sqrt(n)); i++) {
             if (n % i == 0) {
@@ -21,7 +36,7 @@ public class PrimeNumber {
         }
     }
 
-        static boolean[] sieveOfEratosthenes(int n) {
+    static boolean[] sieveOfEratosthenes(int n) {
         boolean[] isPrime = new boolean[n + 1];
         Arrays.fill(isPrime, true);
 
@@ -35,20 +50,11 @@ public class PrimeNumber {
                 }
             }
         }
-        
+
         return isPrime;
     }
 
-
-    /*
-     * How to explain in an interview
-     * "Instead of testing each number for primality, the Sieve of Eratosthenes
-     * eliminates non-primes by marking multiples of known primes.
-     * We only need to loop till √N and start marking from p² because smaller
-     * multiples are already handled.
-     * This algorithm has O(N log log N) time complexity, making it one of the
-     * fastest ways to generate all primes up to N."
-     */
+    
 
     public static void main(String args[]) {
         // Scanner sc = new Scanner(System.in);

@@ -99,10 +99,6 @@ static class Edge{
 
 
 /*
- * Minimum Spannig Tree is a connected and undirected Graph is a subset if the edges that connected to all vertices,
- * Has no cycle and Minimize the total edges of weight(sum of weights is the smallest possible).
- * 
- * Prim’s Algorithm
-Start with any vertex.
-Repeatedly add the smallest weight edge that connects a vertex inside the tree to one outside.
+ MST - Mininmum Spanning tree : It is a subset of edges in a connected, weighted graph that connects all vertices with no cycles and with minimum total edge weight.
+ Prim’s algorithm is a greedy algorithm to find a Minimum Spanning Tree (MST) of a connected, weighted graph.
  */

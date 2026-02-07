@@ -197,3 +197,59 @@ n = 1,048,576, log₂(1,048,576) = 20
 # DSA
 # DSA
 # DSA-JAVA
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# | Feature          | **ROM (Read-Only Memory)**                              | **SSD (Solid State Drive)**                        |
+| ---------------- | ------------------------------------------------------- | -------------------------------------------------- |
+| **Purpose**      | Stores **firmware** or startup instructions (like BIOS) | Stores **user data and OS** (Windows, apps, files) |
+| **Data Type**    | Very small system-level data                            | Large user-level data                              |
+| **Editable?**    | ❌ Not normally editable (read-only)                     | ✅ Fully readable & writable                        |
+| **Used By**      | **Motherboard / CPU**                                   | **Operating System & User**                        |
+| **Storage Size** | Small — a few MBs                                       | Large — GBs to TBs                                 |
+| **Speed**        | Very fast but limited function                          | Fast (much faster than HDDs)                       |
+| **Volatility**   | Non-volatile (data stays after power off)               | Non-volatile                                       |
+| **Example**      | BIOS chip on motherboard                                | C: drive in your laptop                            |
+
+
+# 1. Waterfall Model
+🧠 Concept:
+Waterfall is the oldest and simplest software development model.
+It follows a linear sequence of stages — one must finish before the next starts.
+
+🔁 Phases of Waterfall:
+Requirement Analysis → Gather and document all project needs.
+Design → Create system architecture and design diagrams.
+Implementation (Coding) → Developers write the actual code.
+Testing → Testers find bugs and verify the product works.
+Deployment → Release to users or clients.
+Maintenance → Fix any issues after release.
+
+# 2. Agile Model
+🧠 Concept:
+Agile is an iterative and flexible approach.
+Instead of building everything at once, the project is divided into small parts (iterations or sprints), and each delivers a working version of the software.
+
+Plan a small feature (iteration).
+Design and develop it.
+Test and release it.
+Collect feedback.
+Repeat for the next feature.

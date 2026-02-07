@@ -61,6 +61,37 @@ public class flyodShell {
 
 
 /*
+INTUTION
+The key question it keeps asking
+
+For nodes i → j:
+
+Is going directly from i to j better,
+or going i → k → j?
+
+So the recurrence is:
+dist[i][j]=min(dist[i][j], dist[i][k]+dist[k][j])
+Intuition using “permission” idea 🪪
+
+Imagine nodes as cities.
+
+Initially:
+You’re not allowed to stop anywhere in between.
+dist[i][j] = direct road cost.
+
+Step by step:
+
+Allow node 0 as a stop
+
+Then allow node 1
+
+Then 2, 3, …
+
+At step k, paths are allowed to use only nodes {0..k} as intermediates.
+*/
+
+
+/*
  * Each loop runs 𝑛 times.
 The innermost operation is a constant time comparison and assignment.
 So overall complexity is 𝑛×𝑛×𝑛=𝑂(𝑛3)n×n×n=O(n3)

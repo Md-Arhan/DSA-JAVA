@@ -2,6 +2,8 @@ package DP.UnBoundedKnapsack.CoinChange;
 
 public class Tabulation {
 
+    // This question is find the ways of to return the amount
+
     public static void print(int dp[][]) {
         for (int i = 0; i < dp.length; i++) {
             for (int j = 0; j < dp[0].length; j++) {
@@ -27,13 +29,13 @@ public class Tabulation {
 
         //O(n*sum)
         for (int i = 1; i < n+1; i++) {
-            for (int j = 1; j < sum+1; j++) {
+            for (int j = 1; j < sum+1; j++) {  //looping over the totalReturn
                 int coin = coins[i - 1];
                 if (coin <= j) {
-                    dp[i][j] = dp[i][j - coin] + dp[i - 1][j];
-                } else {
-                    int excProfit = dp[i - 1][j];
-                    dp[i][j] = excProfit;
+                    dp[i][j] = dp[i][j - coin] + dp[i - 1][j];    //including my own coin and checking preciding coins
+                } else { 
+                    int excProfit = dp[i - 1][j];                 // excluding my coin adding preciding coins
+                    dp[i][j] = excProfit; 
                 }
             }
         }
@@ -43,8 +45,8 @@ public class Tabulation {
     }
 
     public static void main(String args[]) {
-        int coins[] = { 2, 5, 3, 6 };
-        int sum = 10;
+        int coins[] = { 1, 2, 5 };
+        int sum = 5;
         int n = coins.length;
         System.out.println(tabulation(n, coins, sum));
     }

@@ -33,7 +33,7 @@ public class Tabulation {
                     dp[i][j] = dp[i - 1][j - 1];
                 } else if (p.charAt(j - 1) == '*') {
                     // Empty || match
-                    dp[i][j] = dp[i][j - 1] || dp[i - 1][j];
+                    dp[i][j] = dp[i][j - 1] || dp[i - 1][j];   // checking whether replace gives true || removing gives true
                 } else {
                     // s="ab", p = "de"
                     dp[i][j] = false;

@@ -25,3 +25,7 @@ public class AmstroingNumber {
 
     }
 }
+
+
+// Amstrong number is number that is equal to the sum of all digits which is raised power of number of digits
+// 153 = 1^3 + 5^3 + 3^3 = 153

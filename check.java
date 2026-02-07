@@ -222,6 +222,6 @@ public class check {
 
         // System.out.println(res);
 
-        System.out.println(1<1);
+        System.out.println(3%4);
     }
 }

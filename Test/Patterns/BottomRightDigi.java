@@ -3,7 +3,7 @@ package Test.Patterns;
 public class BottomRightDigi {
 
     public static void topLeft() {
-        int n = 5;
+        int n = 6;
 
         for (int i = 1; i <= n; i++) {
             // int num = 1;

@@ -23,3 +23,6 @@ public class Fibonacci {
     }
 
 }
+
+
+// The Fibonnaci sequence is a series of numbers where a number is the sum of preciding two numbers.

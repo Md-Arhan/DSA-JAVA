@@ -31,6 +31,8 @@ public class Recurssion {
 }
 
 
+/* The formula for combining the matrices is a*b*d */
+
 /*
  * Associativity Property:
 The associativity property in mathematics refers to how the grouping of numbers does not affect the result of an operation, as long as the operation is associative.

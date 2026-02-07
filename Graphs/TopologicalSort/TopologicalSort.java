@@ -4,6 +4,12 @@ import java.util.Stack;
 
 //TC - O(V+E)
 
+/*
+ * Topological Sort
+ * Topological sort is a linear ordering of the vertices of (DAG) such that every directed u come before v , u -> v.
+ * It is a dependency graph you can do task if the first task is finished
+ */
+
 public class TopologicalSort {
 
      static class Edge {

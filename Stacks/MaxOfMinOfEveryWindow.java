@@ -71,3 +71,16 @@ As you expand left and right from i, you stop when you hit a smaller element—b
 
 So the span between the previous smaller and the next smaller element is the biggest subarray where arr[i] is guaranteed to be the minimum.
  */
+
+
+
+/*
+ * i	arr[i]	left[i]	right[i]	len	Update res[len]
+0	10	-1	7	7	res[7] = max(0,10) = 10
+1	20	0	4	3	res[3] = max(0,20) = 20
+2	30	1	4	2	res[2] = max(0,30) = 30
+3	50	2	4	1	res[1] = max(0,50) = 50
+4	10	-1	7	7	res[7] = max(10,10) = 10
+5	70	4	6	1	res[1] = max(50,70) = 70
+6	30	4	7	2	res[2] = max(30,30) = 30
+ */

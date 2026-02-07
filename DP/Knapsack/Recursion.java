@@ -26,3 +26,5 @@ public class Recursion {
         System.out.println(knapSack(val, wt, W, wt.length));
     }
 }
+
+

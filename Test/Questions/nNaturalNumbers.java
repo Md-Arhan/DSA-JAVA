@@ -37,3 +37,34 @@ public class nNaturalNumbers {
     }
 
 }
+
+
+// A natural number is a postive number use to calculated the sum of those number in order
+
+
+/*
+| Expression           | Meaning                                      |
+| -------------------- | -------------------------------------------- |
+| ( \frac{n(n-1)}{2} ) | choose 2 from (n) (pairs / combinations)     |
+| ( \frac{n(n+1)}{2} ) | sum of first (n) numbers (triangular number) |
+
+
+🧩 1️⃣ 
+n(n−1)
+ — “Number of Unique Pairs” (Combinations)
+
+This expression counts:
+
+How many unordered pairs can be formed from 
+𝑛
+n distinct items?
+
+Formally, it is the combination:
+
+
+2️⃣ n(n+1)
+
+ — “Sum of First 
+𝑛
+n Natural Numbers” 
+*/

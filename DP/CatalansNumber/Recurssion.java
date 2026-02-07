@@ -35,7 +35,7 @@ public class Recurssion {
     }
 
     public static void main(String[] args) {
-        int n = 1;
+        int n = 4;
         System.out.println(catalanRec(n));
     }
 }
@@ -43,14 +43,13 @@ public class Recurssion {
 
 
 /*
- * Catalan numbers are a famous sequence of natural numbers that appear in many combinatorial problems — often where there's a need to count ways of structured arrangements.
- **Catalan Numbers via Divide and Conquer
-Catalan numbers are naturally solved using Divide and Conquer — the idea is to break a large structure into smaller independent parts, solve each part, and combine the results.
+Catalans are famous sequence of natural numbers that appears in combinational problems and often for counting ways.
+It can naturally from Divide and Conquer , they count structures that can split into smaller independent substructures
 
 This means:
 To compute C_n, we divide it into C_i (left substructure) and C_{n-1-i} (right substructure), and multiply them because each left pairing can combine with each right pairing.
 
- Intuition
+Intuition
 Think of valid parentheses or binary tree structures:
 When constructing a binary tree with n nodes:
 Choose i nodes for the left subtree → C_i ways.

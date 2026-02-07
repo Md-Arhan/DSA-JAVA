@@ -17,6 +17,17 @@ public class DecimalToBinary {
         System.out.println(binNum);
     }
 
+     public static String decimalToBinary(int decimal) {
+        if (decimal == 0) return "0";
+        StringBuilder binary = new StringBuilder();
+        while (decimal > 0) {
+            int remainder = decimal % 2;  // Get remainder  //The remainder tells us the current binary bit.
+            binary.insert(0, remainder);  // Insert at the beginning // because binary digits are generated in reverse order
+            decimal = decimal / 2;        // Divide by 2  // We reduce the number by dividing it by 2 — discarding any remainder
+        }
+        return binary.toString();
+    }
+
     public static void main(String[] args) {
         decToBin(15);
     }
