@@ -97,7 +97,7 @@ public class BellmanFord {
             }
         }
 
-        for (int i = 0; i < dis.length; i++) {
+        for (int i = 0; i < dis.length; i++) {m
             System.out.print(dis[i] + " ");
         }
         System.out.println();

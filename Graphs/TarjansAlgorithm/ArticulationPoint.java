@@ -47,10 +47,10 @@ public class ArticulationPoint {
           if (par == neigh) {
             continue;
           }else if (vis[neigh]) {
-            low[curr] = Math.min(low[curr], dt[neigh]);
+            low[curr] = Math.min(low[curr], dt[neigh]);      // if we tale low[neigh] then in cyclic manner it will give u the wrong answer, 
           }else{
             dfs(graph, neigh, curr, dt, low, time, vis, ap);
-            low[curr] = Math.min(low[curr], low[neigh]);
+            low[curr] = Math.min(low[curr], low[neigh]);    // to detect the cycle
 
             if (par!=-1 && dt[curr] <= low[neigh]) {
                 ap[curr] = true;
@@ -94,3 +94,28 @@ public class ArticulationPoint {
         getAP(graph, V);
     }
 }
+
+
+
+/*
+
+The subtle difference
+- Back edge case:
+When you see a neighbor that’s already visited (and not the parent), that edge is a back edge.
+A back edge connects the current node (or its descendants) to an ancestor in the DFS tree.
+- Why use dist[neigh]:
+dist[neigh] is the discovery time of that ancestor. That’s the earliest point in the DFS when it was first reached.
+If you mistakenly use low[neigh], you’re allowing the neighbor’s subtree to influence the calculation — but in a back edge, you don’t care about the neighbor’s descendants, only the ancestor itself.
+
+
+
+Why not low[neigh]?
+If you used:
+low[curr] = Math.min(low[curr], low[neigh]);
+
+
+then you’d be saying:
+"I can reach as early as whatever neigh’s subtree can reach."
+But that’s wrong for a back edge, because neigh is already visited and not part of your subtree — you should only consider its discovery time, not its descendants.
+
+*/

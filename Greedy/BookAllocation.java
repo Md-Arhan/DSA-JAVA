@@ -1,5 +1,8 @@
 package Greedy;
 
+/* Binary Search on Answer : Core Intuition : If we go below the max, we cannot assign that book to any student, which breaks the problem because every book must be assigned.
+ */
+
 public class BookAllocation {
 
         // Function to check if we can allocate books with the given maxPages per student
@@ -64,7 +67,7 @@ public class BookAllocation {
 
  * 🔁 Binary Search Steps:
 ✅ Try mid = (90 + 203) / 2 = 146
-Check if we can allocate books with max 146 pages per student.
+Check if we can allocate books with max 146 pages per student.  
 
 Student 1:
 

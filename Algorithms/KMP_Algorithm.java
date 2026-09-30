@@ -5,6 +5,7 @@ import java.util.ArrayList;
 
 public class KMP_Algorithmz {
 
+    // For the substring from 0 to i, what is the longest beginning part that also appears at its end?, LPS only says that a prefix matches a suffix
     static void constructLps(String pat, int[] lps) {
 
         // len stores the length of longest prefix which
@@ -67,7 +68,7 @@ public class KMP_Algorithmz {
                     res.add(i - j); // j = 4 -1 = 3 aaba = 4;
 
                     // Use LPS of previous index to
-                    // skip unnecessary comparisons
+                    // skip unnecessary comparisons 
                     j = lps[j - 1];
                 }
             }

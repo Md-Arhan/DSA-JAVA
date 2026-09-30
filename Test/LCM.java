@@ -8,14 +8,14 @@ public class LCM {
 
     // Function to calculate LCM
     public static int lcm(int a, int b) {
-        return (a * b) / gcd(a, b);
+        return (a * b) / gcd(a, b);     // a / gcd(a, b) * b; overflow handler
     }
 
     public static void main(String[] args) {
         int a = 12;
         int b = 18;
 
-        System.out.println(gcd(10, 15));
+        System.out.println(gcd(6, 4));
 
         // System.out.println("LCM of " + a + " and " + b + " is " + lcm(a, b));
     }

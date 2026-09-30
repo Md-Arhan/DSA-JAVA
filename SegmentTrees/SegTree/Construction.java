@@ -17,7 +17,7 @@ public class Construction {
         int mid = (start + end) /2;
         int left = buildSegTree(arr, 2*sti+1, start, mid);  //left subtree
         int right = buildSegTree(arr, 2*sti+2, mid+1, end);  //right tree
-        // tree[sti] = tree[2*sti+1] + tree[2*sti+2];
+        // tree[sti] = tree[2*sti+1] + tree[2*sti+2];   
         tree[sti] = left + right;
         return tree[sti];
     }

@@ -191,6 +191,10 @@ public class check {
     // }
 
     public static void main(String[] args) {
+
+        // for(int i=0; i<n; i++){
+            
+        // }
         // String[] strs = {"flower", "flow", "flight"};
         // for(int i=0; i<strs.length; i++){
         //     insert(strs[i]);
@@ -222,6 +226,6 @@ public class check {
 
         // System.out.println(res);
 
-        System.out.println(3%4);
+        System.out.println(128 == 128);
     }
 }

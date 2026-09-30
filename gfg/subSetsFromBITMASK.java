@@ -1,4 +1,4 @@
-public class subSetsFromBITMASK {
+    public class subSetsFromBITMASK {
     class Solution {
     
     public int countSubset(int[] arr, int k) {

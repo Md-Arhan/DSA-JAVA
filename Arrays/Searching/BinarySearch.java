@@ -131,3 +131,18 @@ public class BinarySearch {
         System.out.println(binarySearch(arr, target));
     }
 }
+
+
+/*
+What is upperBound?
+
+It means:
+
+Find the first element that is strictly greater than the target.
+
+lowerBound
+
+It means:
+
+Find the first element that is greater than or equal to 3.
+*/

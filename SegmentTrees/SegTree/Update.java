@@ -1,4 +1,4 @@
-package SegmentTrees.SegTree;
+    package SegmentTrees.SegTree;
 
 public class Update {
     static int tree[];

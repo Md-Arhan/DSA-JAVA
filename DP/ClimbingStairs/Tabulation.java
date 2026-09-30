@@ -16,8 +16,6 @@ public class Tabulation {
         }
 
         return dp[n];
-
-        
     }
 
     public static void main(String args[]){
