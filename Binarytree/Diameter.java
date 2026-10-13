@@ -64,18 +64,18 @@ public class Diameter {
 
     }
     
-    //Edges
-    public int diameter(TreeNode root){
-        if (root == null) return 0;
+    // //Edges
+    // public int diameter(TreeNode root){
+    //     if (root == null) return 0;
 
-        int left = diameter(root.left);
-        int right = diameter(root.right);
+    //     int left = diameter(root.left);
+    //     int right = diameter(root.right);
 
-        // update max diameter
-        diameter = Math.max(diameter, left + right);  // number of edges
+    //     // update max diameter
+    //     diameter = Math.max(diameter, left + right);  // number of edges
 
-        return Math.max(left, right) + 1; // return height
-    }
+    //     return Math.max(left, right) + 1; // return height
+    // }
 
     public static void main(String[] args) {
         /*
